@@ -1,0 +1,52 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 5rem;
+ 
+  
+}
+.active-tab{
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  justify-content: flex-start;
+  width: 100%; 
+  
+}
+.tab {
+  
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+   color: #989595 ;
+}
+.tab.active {
+  background: none;
+  border: none;
+  border-color: #e66c5a;
+  border-bottom: 2px solid #e66c5a;
+  font-weight: bold;
+  color:#09174A;
+  cursor: pointer;
+}
+.login-button{
+  background-color: #e66c5a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  
+}
+.custom-input{
+   border: 1px solid #ccc;          
+  padding-left: 12px;
+  font-size: 15px;
+  border-radius: 3px;
+  height: 2rem;
+}
+.custom-input::placeholder {
+  font-size: 13px;
+}
