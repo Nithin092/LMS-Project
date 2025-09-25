@@ -16,7 +16,7 @@ export default function Navbar() {
   const Navigate = useNavigate();
   // const [NavbarBtn, setNavbar] = useState("")
   const handleLogout = () => {
-
+       window.location.href = '/';
   }
 
   return (
@@ -41,6 +41,15 @@ export default function Navbar() {
                 <FaBookReader size={20} />
                 My Books
               </NavLink>
+              <NavLink to="/allbooks"
+              className={({ isActive }) =>
+                `btn mt-4 navcomp navcomp1 d-flex align-items-center gap-3 ps-3 pt-2 pb-2 ${isActive ? " active " : "text-white "
+                }`
+              }
+               >
+                <MdMenuBook size={20} />
+              All Books
+              </NavLink>
             </>
           )
         }
@@ -58,6 +67,17 @@ export default function Navbar() {
               <MdTaskAlt size={20} />
               Issued Books
             </NavLink>
+            
+              <NavLink
+              to={user?.user ==='admin'?"/allbooks":"/allbooks"}
+               className={({ isActive }) =>
+                `btn mt-4 navcomp navcomp1 d-flex align-items-center gap-3 ps-3 pt-2 pb-2 ${isActive ? " active" : "text-white"
+                }`
+              }
+            >
+              <MdMenuBook size={20} />
+              All Books
+            </NavLink> 
           
             <NavLink
               to="/students"
@@ -72,16 +92,7 @@ export default function Navbar() {
           </>
         )}
 
-          <NavLink
-              to={user?.user ==='admin'?"/allbooks":"/allbooks"}
-               className={({ isActive }) =>
-                `btn mt-4 navcomp navcomp1 d-flex align-items-center gap-3 ps-3 pt-2 pb-2 ${isActive ? " active" : "text-white"
-                }`
-              }
-            >
-              <MdMenuBook size={20} />
-              All Books
-            </NavLink>  
+         
       </div>
 
       <div className='logout mb-5' >
@@ -96,8 +107,8 @@ export default function Navbar() {
             )}
             {user?.user === "student" && (
               <>
-                <p className=' m-0 mb-0'>Nitin</p>
-                <p className=' m-0 mb-0'>nithin@gmail.com</p>
+                <p className=' m-0 mb-0'>Ram</p>
+                <p className=' m-0 mb-0'>Ram@gmail.com</p>
               </>
             )}
             

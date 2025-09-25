@@ -78,3 +78,29 @@ a:link {
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   color: #09174a;
 }
+.pg-items{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #09174a;
+}
+
+
+@media (max-width: 936px) {
+  .pages {
+    margin-left: 150px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .logodiv {
+    padding-left: 0.4rem !important;
+  }
+
+  .navcomp {
+    padding-left: 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: 0rem;
+  }
+}

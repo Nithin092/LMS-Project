@@ -30,7 +30,7 @@ function Login() {
        login(email, "admin");
       navigate("/IssuedBooks");
     }
-    else if (email === "student@gmail.com" && password === "student123") {
+    else if (email === "ram@gmail.com" && password === "ram123") {
       login(email, "student");
       navigate("/Mybooks");
   }
